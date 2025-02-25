@@ -1,0 +1,20 @@
+{{define "title"}}Товары{{end}}
+
+{{define "main"}}
+
+{{if .Products}}
+
+<h2>Товары</h2>
+
+{{range .Products}}
+<h3>Товар: {{.Name}}:</h3>
+<p>Количество: {{.Quantity}}</p>
+<p>Цена: {{.Price}}
+<p>Описание: {{.Description}}</p>
+{{end}}
+
+{{else}}
+    <h2>Ещё нет товаров!</h2>
+{{end}}
+
+{{end}}

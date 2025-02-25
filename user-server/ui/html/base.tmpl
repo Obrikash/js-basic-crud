@@ -1,0 +1,24 @@
+{{define "base"}}
+
+<!doctype html>
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'>
+        <title>{{template "title" .}} - Mirea Shop </title>
+
+        <link rel='stylesheet' href='/static/css/main.css'>
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700'>
+    </head>
+    <body>
+        <header>
+            <h1><a href='/'>Mirea Shop</a></h1>
+        </header>
+        <main>
+            {{template "main" .}}
+        </main>
+        <footer>
+        Powered by <a href='https://golang.org/'>Go</a> in 2025
+        </footer>
+    </body>
+</html>
+{{end}}
